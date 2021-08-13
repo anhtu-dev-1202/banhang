@@ -27,7 +27,7 @@ if (isset($_POST['btnLuu'])) {
 
         $res = executeQuery($sql1);
         if (count($res) == 0) {
-            header('location: products.php');
+            header('location: '.DOMAIN.'Admin/products.php');
         } else {
             $error = 'Không thể cập nhật sản phẩm';
         }

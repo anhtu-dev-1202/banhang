@@ -19,7 +19,7 @@ if (isset($_POST['btnLuu'])) {
     $res = executeQuery($sql);
 
     if (count($res) == 0) {
-        header('location: products.php');
+        header('location: '.DOMAIN.'Admin/products.php');
     } else {
         $error = 'Can not create product';
     }

@@ -3,9 +3,10 @@
 <?php
     session_start();
     require_once '../db.php';
+    require_once '../const.php';
 
     if (isset($_SESSION["login"])) {
-        header('location: /Admin/index.php');
+        header('location: '.DOMAIN.'Admin/index.php');
     }
 
     if (isset($_POST['btnLuu'])) {
@@ -14,13 +15,13 @@
         $email = $_POST['email'];
         $pass = md5($_POST['pass']);
         $sql = "select * from user where email = '$email' and password = '$pass' limit 1";
-        $result = executeQuery($sql, true);
+        $result = executeQuery($sql);
         if (count($result) > 0) {
             if ($result[0]->role == 0) {
                 $_SESSION["login"] = true;
-                header('location: /Admin/index.php');
+                header('location: '.DOMAIN.'Admin/index.php');
             } else {
-                header('location: /index.php');
+                header('location: '.DOMAIN.'index.php');
             }
         }
         $error = 'Wrong Email or Password!';

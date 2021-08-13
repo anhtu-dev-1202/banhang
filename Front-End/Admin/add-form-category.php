@@ -13,7 +13,7 @@ if (isset($_POST['btnLuu'])) {
         $sql = "insert into category(name) values ('$name')";
         $res = executeQuery($sql);
         if (count($res) == 0) {
-            header('location: category.php');
+            header('location: '.DOMAIN.'Admin/category.php');
         } else {
             $error = 'Can not create category';
         }

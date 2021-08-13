@@ -28,7 +28,7 @@ if (isset($_POST['btnLuu'])) {
 
     $res = executeQuery($sql1);
     if (count($res) == 0) {
-        header('location: users.php');
+        header('location: '.DOMAIN.'Admin/users.php');
     } else {
         $error = 'Không thể cập nhật thành viên';
     }

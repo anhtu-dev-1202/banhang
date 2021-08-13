@@ -50,8 +50,8 @@ require_once '../db.php';
                                        <td><?= $u['address'] ?></td>
                                        <td><?= $u['role'] == 0 ? 'Admin' : 'User' ?></td>
                                        <td>
-                                           <a class="btn btn-sm btn-warning" href="edit-form-user.php?id=<?= $u['id'] ?>">Edit</a>
-                                           <a onclick="return confirm('Are you sure you want to delete?')" class="btn btn-sm btn-danger" href="remove-user.php?id=<?= $u['id'] ?>">Del</a>
+                                           <a class="btn btn-sm btn-warning" href="<?= DOMAIN.'Admin/' ?>edit-form-user.php?id=<?= $u['id'] ?>">Edit</a>
+                                           <a onclick="return confirm('Are you sure you want to delete?')" class="btn btn-sm btn-danger" href="<?= DOMAIN.'Admin/' ?>remove-user.php?id=<?= $u['id'] ?>">Del</a>
                                        </td>
                                    </tr>
                                <?php endforeach ?>

@@ -40,8 +40,8 @@
                                         <td><?php echo $key + 1 ?></td>
                                         <td><?php echo $u['name'] ?></td>
                                         <td>
-                                            <a class="btn btn-sm btn-warning" href="edit-form-category.php?id=<?php echo $u['id'] ?>">Edit</a>
-                                            <a onclick="return confirm('Are you sure you want to delete?')" class="btn btn-sm btn-danger" href="remove-cat.php?id=<?php echo $u['id'] ?>">Del</a>
+                                            <a class="btn btn-sm btn-warning" href="<?= DOMAIN.'Admin/' ?>edit-form-category.php?id=<?php echo $u['id'] ?>">Edit</a>
+                                            <a onclick="return confirm('Are you sure you want to delete?')" class="btn btn-sm btn-danger" href="<?= DOMAIN.'Admin/' ?>remove-cat.php?id=<?php echo $u['id'] ?>">Del</a>
                                         </td>
                                     </tr>
                                 <?php endforeach ?>

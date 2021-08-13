@@ -44,8 +44,8 @@ $result = executeQuery($sql, true);
                                         <td><?= $u['name'] ?></td>
                                         <td><?= number_format($u['price']) ?> đ</td>
                                         <td>
-                                            <a class="btn btn-sm btn-warning" href="edit-form-product.php?id=<?= $u['id'] ?>">Edit</a>
-                                            <a onclick="return confirm('Are you sure you want to delete?')" class="btn btn-sm btn-danger" href="remove-product.php?id=<?= $u['pro_id'] ?>">Del</a>
+                                            <a class="btn btn-sm btn-warning" href="<?= DOMAIN.'Admin/' ?>edit-form-product.php?id=<?= $u['id'] ?>">Edit</a>
+                                            <a onclick="return confirm('Are you sure you want to delete?')" class="btn btn-sm btn-danger" href="<?= DOMAIN.'Admin/' ?>remove-product.php?id=<?= $u['pro_id'] ?>">Del</a>
                                         </td>
                                     </tr>
                                 <?php endforeach ?>

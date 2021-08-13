@@ -26,9 +26,10 @@
 <?php
     session_start();
     require_once 'js.php';
+    include './../const.php';
 
     if (!isset($_SESSION["login"])) {
-        header('location: /index.php');
+        header('location: '.DOMAIN.'index.php');
     }
 ?>
 

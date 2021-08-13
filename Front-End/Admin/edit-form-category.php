@@ -13,7 +13,7 @@ if (isset($_POST['btnLuu'])) {
     $name = $_POST['name'];
     $sql1 = "update category set name = '$name' where id = '$id'";
     executeQuery($sql1);
-    header('location: category.php');
+    header('location: '.DOMAIN.'Admin/category.php');
 }
 ?>
 
