@@ -1,0 +1,219 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.text-decoration {
+    text-decoration: none;
+    color: #000;
+}
+
+.detail-news {
+    font-size: 10px;
+}
+
+.text-decoration:hover {
+    color: none;
+    text-decoration: none;
+}
+
+.navbar li {
+    text-decoration: none;
+    flex: 1 auto;
+    list-style-type: none;
+}
+
+.form-test {
+    position: absolute;
+    top: 120px;
+    left: 440px;
+    padding-top: 10px;
+}
+
+.bg-form-test {
+    background: rgba(13, 23, 49, 0.5);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+/* content */
+
+.fl {
+    height: 1px;
+    position: relative;
+    -webkit-box-flex: 1px;
+    flex: 1 1 auto;
+    min-width: 10%;
+}
+
+.fla {
+    border-top-width: 2px;
+    margin-top: 50px;
+    border-color: #000;
+    height: 1px;
+    border-top: 3px solid #000;
+    display: block;
+    position: relative;
+    top: 1px;
+    width: 100%;
+}
+
+h4.ly-thuyet-o-to {
+    border: 2px solid #000;
+    position: relative;
+    padding: 5px;
+    width: 180px;
+    flex: 0 1 auto;
+    top: -17px;
+    font-size: 15px;
+    background-color: #fff;
+    left: 520px;
+    text-align: center;
+}
+
+.card-lesson {
+    margin-top: 40px;
+    text-decoration: none;
+    background-color: #0d192e;
+    border: none;
+    box-shadow: 10px 10px 5px rgb(129, 177, 214);
+    -moz-box-shadow: 10px 10px 10px;
+    -webkit-box-shadow: 10px 10px 10px rgb(127, 171, 224);
+    -o-box-shadow: 10px 10px 3px;
+    -ms-box-shadow: 10px 10px 3px;
+}
+
+.card-lesson:hover {
+    box-shadow: 10px 10px 5px rgb(88, 158, 211);
+    -moz-box-shadow: 10px 10px 10px rgb(45, 102, 145);
+    -webkit-box-shadow: 10px 10px 10px rgb(95, 166, 216);
+    -o-box-shadow: 10px 10px 10px rgb(71, 142, 197);
+    -ms-box-shadow: 10px 10px 10px rgb(97, 150, 194);
+}
+
+.card-lesson img {
+    background-color: rgb(236, 236, 236);
+}
+
+.card-text {
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.bg-lesson {
+    background-color: rgb(9, 39, 49);
+}
+
+.detail-lesson {
+    font-size: 15px;
+    text-align: justify;
+}
+
+.bg-news {
+    background-color: #f7f7f7;
+    color: #fff;
+    color: #000;
+}
+
+.card-news {
+    border: 1px solid rgb(231, 231, 231);
+    background-color: rgb(197, 197, 197);
+}
+
+.content-img>p>img {
+    flex: auto;
+}
+
+.content-news {
+    line-height: 27px;
+}
+
+
+/* Lý thuyết */
+
+.border-lt {
+    border-bottom: 1px solid #000;
+}
+
+
+/* đề thi */
+
+.right {
+    position: relative;
+    float: right;
+    left: 15px;
+}
+
+.box-exam {
+    text-align: center;
+    width: 18.6% !important;
+}
+
+
+/* comment */
+
+.scroll {
+    height: 600px;
+    border: 1px solid rgb(224, 224, 224);
+    overflow: scroll;
+}
+
+.list-group {
+    display: inline !important;
+}
+
+.btnkt {
+    height: 50px;
+    line-height: 35px;
+}
+
+.form-re {
+    width: 30.5% !important;
+    margin-left: 8px;
+}
+
+.form-res {
+    width: 30% !important;
+    margin-left: 8px;
+}
+
+.kq-all {
+    text-align: center;
+    font-weight: bold;
+    color: #0011ff;
+}
+
+.kq-true {
+    color: rgb(0, 182, 61);
+    font-weight: bold;
+}
+
+.kq-false {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+.final-kq {
+    font-size: 20px;
+}
+
+.btn-thi {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-thi:hover {
+    background-color: #1e7a05;
+    color: #fff;
+}
+
+.btn-dethi {
+    background-color: #2ab300;
+    color: #fff;
+}
+
+.btn-dethi:hover {
+    background-color: #218d00;
+    color: #fff;
+}
